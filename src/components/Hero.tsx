@@ -5,93 +5,70 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-cyan-400 to-blue-600 z-0" />
+    <div className="relative min-h-screen flex flex-col">
+      {/* Navigation */}
+      <nav className="w-full p-4 flex items-center justify-between z-10">
+        <div className="flex items-center gap-2">
+          <span className="text-2xl font-bold">$DOLF</span>
+          <Link href="/learn-more" className="text-white hover:text-blue-200 transition-colors">
+            Learn More
+          </Link>
+        </div>
+      </nav>
 
-      {/* Bottom Rocks */}
-      <div className="absolute bottom-0 left-0 w-full">
-        <div className="relative w-full h-[300px]">
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col items-center justify-center px-4 relative">
+        <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center">
+          $DOLF - The King of Cardano Ocean
+        </h1>
+
+        {/* Social Links */}
+        <div className="mb-8">
+          <a
+            href="https://x.com/DOLF_CARDANO"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl text-white hover:text-blue-200 transition-colors"
+          >
+            Follow on X NOW
+          </a>
+        </div>
+
+        {/* Description */}
+        <div className="max-w-3xl text-center space-y-4 mb-8">
+          <p className="text-lg">
+            $DOLF is the ultimate meme coin in the Cardano ecosystem, bringing fun and prosperity to the Cardano Ocean.
+          </p>
+          <p className="text-lg">
+            Fish and water, have always been a part of human culture and civilization. $DOLF is not just a movement but a revolution in the Cardano&apos;s infrastructure.
+          </p>
+          <p className="text-lg">
+            Unpredictable and mischievous, $DOLF stirs up waves of excitement and brings people together. Just like the creatures that share its name—in aquariums, rivers, and oceans around the world—$DOLF aims to create the Cardano Ocean and bring prosperity to all.
+          </p>
+        </div>
+
+        {/* Main Character Image */}
+        <div className="relative w-full max-w-2xl">
           <Image
-            src="/rocks-bg.png"
-            alt="Ocean rocks with seaweed"
-            fill
-            className="object-cover"
+            src="/dolf-character.png"
+            alt="Muscular DOLF character"
+            width={800}
+            height={600}
             priority
-            quality={100}
+            className="w-full h-auto"
           />
         </div>
       </div>
 
-      {/* Logo Section */}
-      <div className="absolute top-0 w-full flex justify-between items-center p-6 z-10">
-        <div className="flex items-center gap-3">
-          <div className="relative w-16 h-16">
-            <Image
-              src="/dolf-character.png"
-              alt="$DOLF Character"
-              fill
-              className="object-contain"
-              priority
-              quality={100}
-            />
-          </div>
-          <span className="text-white text-2xl font-bold">$DOLF</span>
-        </div>
-        <Link 
-          href="/page2" 
-          className="text-white font-semibold px-6 py-2 rounded-full bg-red-500 hover:bg-red-600 transition-all"
-        >
-          Learn More
-        </Link>
-      </div>
-
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center">
-        {/* Character Section */}
-        <div className="mb-8">
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
-            <Image
-              src="/dolf-character.png"
-              alt="$DOLF Character"
-              fill
-              className="object-contain"
-              priority
-              quality={100}
-            />
-          </div>
-        </div>
-
-        {/* Text Content */}
-        <div className="text-white max-w-3xl">
-          <h1 className="text-5xl md:text-6xl font-bold mb-8 drop-shadow-lg">
-            $DOLF - The King of Cardano Ocean
-          </h1>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://x.com/DOLF_CARDANO"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 bg-black hover:bg-gray-900 rounded-full font-bold text-lg transition-all"
-            >
-              <Image
-                src="/x-logo.svg"
-                alt="X (Twitter) Logo"
-                width={24}
-                height={24}
-                className="transition-transform group-hover:scale-110"
-              />
-              <span>Follow on X</span>
-            </a>
-            <a
-              href="https://www.snek.fun/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-red-600 hover:bg-red-700 text-white rounded-full font-bold text-lg transition-all"
-            >
-              BUY NOW
-            </a>
-          </div>
+      {/* Animated Seaweed */}
+      <div className="absolute bottom-0 left-0 w-full h-32 pointer-events-none">
+        <div className="relative w-full h-full">
+          <div className="seaweed absolute bottom-0 left-[10%] w-8 h-24 bg-green-400"></div>
+          <div className="seaweed absolute bottom-0 left-[20%] w-8 h-32 bg-green-400"></div>
+          <div className="seaweed absolute bottom-0 left-[30%] w-8 h-28 bg-green-400"></div>
+          <div className="seaweed absolute bottom-0 left-[70%] w-8 h-24 bg-green-400"></div>
+          <div className="seaweed absolute bottom-0 left-[80%] w-8 h-32 bg-green-400"></div>
+          <div className="seaweed absolute bottom-0 left-[90%] w-8 h-28 bg-green-400"></div>
         </div>
       </div>
     </div>

@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
-  basePath: process.env.NODE_ENV === 'production' ? '/dolf-website' : '',
+  output: 'export',
+  basePath: '/dolf-website',
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,
+  assetPrefix: '/dolf-website/',
 }
 
 module.exports = nextConfig 
