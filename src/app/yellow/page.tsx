@@ -35,10 +35,10 @@ export default function Yellow() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Tokenomics</h2>
             <div className="space-y-4">
               {[
-                { label: 'Public', value: '75%', color: 'bg-blue-500' },
-                { label: 'Vest', value: '20%', color: 'bg-green-500' },
-                { label: 'Marketing', value: '2%', color: 'bg-purple-500' },
-                { label: 'Team', value: '3%', color: 'bg-yellow-500' }
+                { label: 'Public', value: '85%', color: 'bg-blue-500' },
+                { label: 'Vest', value: '10%', color: 'bg-green-500' },
+                { label: 'Team', value: '3%', color: 'bg-yellow-500' },
+                { label: 'Marketing', value: '2%', color: 'bg-purple-500' }
               ].map((item, i) => (
                 <div key={i} className="relative">
                   <div className="flex justify-between items-center mb-2">
@@ -84,7 +84,7 @@ export default function Yellow() {
                 },
                 {
                   title: 'Vested Supply',
-                  description: '20% Initial Vesting for 1 Month'
+                  description: '10% Initial Vesting for 1 Month'
                 },
                 {
                   title: 'Anti-Bot',

@@ -34,10 +34,10 @@ export default function Tokenomics() {
             <h2 className="text-3xl font-bold text-white mb-6">Token Distribution</h2>
             <div className="space-y-6">
               {[
-                { label: 'Presale', value: '40%', color: 'bg-blue-500' },
-                { label: 'Liquidity', value: '30%', color: 'bg-green-500' },
-                { label: 'Marketing', value: '20%', color: 'bg-purple-500' },
-                { label: 'Team', value: '10%', color: 'bg-yellow-500' }
+                { label: 'Public', value: '85%', color: 'bg-blue-500' },
+                { label: 'Vest', value: '10%', color: 'bg-green-500' },
+                { label: 'Team', value: '3%', color: 'bg-yellow-500' },
+                { label: 'Marketing', value: '2%', color: 'bg-purple-500' }
               ].map((item, i) => (
                 <div key={i} className="relative">
                   <div className="flex justify-between items-center mb-2">
