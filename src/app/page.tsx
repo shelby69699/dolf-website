@@ -74,7 +74,7 @@ export default function Home() {
             Follow on X
           </a>
           <a
-            href="https://www.snek.fun/token/738080f4674c1484b2ed566629d70ead7065a64872927297775f8eef444f4c46"
+            href="https://www.snek.fun/token/1758da6389762772741d6fdac158ffcb136b4affad98e5f28621e1a2444f4c46"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#F84444] text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-[#E03434] transition-colors"
