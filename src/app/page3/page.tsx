@@ -75,7 +75,7 @@ export default function Page3() {
       {/* Buy Now Button */}
       <div className="mb-12">
         <Link 
-          href="https://snek.fun" 
+          href="https://www.snek.fun/token/8e8d10d2f1d8f0370f38f7a4aadf2501e8616a43d253a938297a01b2444f4c46" 
           target="_blank"
           className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full text-xl transition-all"
         >

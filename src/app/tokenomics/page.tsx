@@ -95,7 +95,7 @@ export default function Tokenomics() {
         {/* Buy Now Section */}
         <div className="text-center">
           <a
-            href="https://www.snek.fun/token/1758da6389762772741d6fdac158ffcb136b4affad98e5f28621e1a2444f4c46"
+            href="https://www.snek.fun/token/8e8d10d2f1d8f0370f38f7a4aadf2501e8616a43d253a938297a01b2444f4c46"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#F84444] text-white px-12 py-4 rounded-full text-xl font-bold hover:bg-[#E03434] transition-colors shadow-lg transform hover:scale-105"
